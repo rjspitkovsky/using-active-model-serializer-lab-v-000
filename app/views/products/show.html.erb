@@ -1,5 +1,7 @@
 <a href="#" class="js-next" data-id="<%=@product.id%>">Next Product</a>
 <h1 class="productName"><%= @product.name %></h1>
+<p class="productId"><%=@product.id%></p>
+<p class="productCreatedAt"><%=@product.created_at%></p>
 <p class="productInventory"><%= @product.inventory %></p>
 <p class="productPrice"><%= @product.price %></p>
 <p class="productDescription"><%= @product.description %></p>
@@ -19,4 +21,3 @@ $(function () {
   });
 });
 </script>
-

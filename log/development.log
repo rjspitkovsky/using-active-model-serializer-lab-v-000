@@ -1959,3 +1959,29 @@ Processing by ProductsController#show as JSON
   Parameters: {"id"=>"21"}
   [1m[35mProduct Load (0.1ms)[0m  SELECT  "products".* FROM "products" WHERE "products"."id" = ? LIMIT 1  [["id", 21]]
 Completed 200 OK in 12ms (Views: 0.7ms | ActiveRecord: 0.8ms)
+
+
+Started GET "/products/" for 98.113.26.218 at 2018-05-17 20:58:33 +0000
+Cannot render console from 98.113.26.218! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+  [1m[36mActiveRecord::SchemaMigration Load (0.2ms)[0m  [1mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+Processing by ProductsController#index as HTML
+  [1m[35mProduct Load (0.2ms)[0m  SELECT "products".* FROM "products"
+  Rendered products/index.html.erb within layouts/application (12.2ms)
+Completed 200 OK in 266ms (Views: 244.5ms | ActiveRecord: 0.7ms)
+
+
+Started GET "/products/22.json" for 98.113.26.218 at 2018-05-17 20:58:38 +0000
+Cannot render console from 98.113.26.218! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by ProductsController#show as JSON
+  Parameters: {"id"=>"22"}
+  [1m[36mProduct Load (0.3ms)[0m  [1mSELECT  "products".* FROM "products" WHERE "products"."id" = ? LIMIT 1[0m  [["id", 22]]
+Completed 200 OK in 18ms (Views: 0.8ms | ActiveRecord: 0.3ms)
+
+
+Started GET "/products/22" for 98.113.26.218 at 2018-05-17 20:59:52 +0000
+Cannot render console from 98.113.26.218! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by ProductsController#show as HTML
+  Parameters: {"id"=>"22"}
+  [1m[35mProduct Load (0.1ms)[0m  SELECT  "products".* FROM "products" WHERE "products"."id" = ? LIMIT 1  [["id", 22]]
+  Rendered products/show.html.erb within layouts/application (0.8ms)
+Completed 200 OK in 21ms (Views: 19.7ms | ActiveRecord: 0.1ms)
