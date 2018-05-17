@@ -15,6 +15,8 @@ $(function () {
       $(".productPrice").text(data["price"]);
       $(".productDescription").text(data["description"]);
       $(".productInventory").text(data["inventory"]);
+      $(".productId").text(data["id"]);
+      $(".productCreatedAt").text(data["id"]);
       // re-set the id to current on the link
       $(".js-next").attr("data-id", data["id"]);
     });
