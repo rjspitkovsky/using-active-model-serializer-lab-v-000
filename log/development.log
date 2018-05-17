@@ -1994,3 +1994,4 @@ Processing by ProductsController#show as HTML
   [1m[36mProduct Load (0.1ms)[0m  [1mSELECT  "products".* FROM "products" WHERE "products"."id" = ? LIMIT 1[0m  [["id", 22]]
   Rendered products/show.html.erb within layouts/application (0.8ms)
 Completed 200 OK in 54ms (Views: 52.2ms | ActiveRecord: 0.1ms)
+  [1m[36mOrder Load (0.2ms)[0m  [1mSELECT  "orders".* FROM "orders"  ORDER BY "orders"."id" ASC LIMIT 1[0m
